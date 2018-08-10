@@ -166,6 +166,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell?.detailTextLabel?.text = users[indexPath.row].email
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
